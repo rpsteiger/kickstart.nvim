@@ -5,12 +5,12 @@ local M = {
 
 function M.config()
   local wk = require 'which-key'
-  wk.register {
-    ['<leader>e'] = { '<cmd>NvimTreeToggle<CR>', 'Explorer' },
+  wk.add {
+    { '<leader>e', '<cmd>NvimTreeToggle<CR>', desc = 'Explorer' },
   }
 
   require('nvim-tree').setup {
-    hijack_netrw = false,
+    hijack_netrw = true,
     sync_root_with_cwd = true,
     view = {
       relativenumber = true,
@@ -18,7 +18,7 @@ function M.config()
     renderer = {
       add_trailing = false,
       group_empty = false,
-      highlight_git = false,
+      highlight_git = true,
       full_name = false,
       highlight_opened_files = 'none',
       root_folder_label = ':t',
