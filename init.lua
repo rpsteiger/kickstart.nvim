@@ -969,9 +969,11 @@ do
 
   -- NOTE: You can add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --
-  --  Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
+  --  Uncomment the following line and add your plugins to `lua/custo
+  --  m/plugins/*.lua` to get going.
   -- require 'custom.plugins'
+    require 'custom.custom-init'
 end
 
 -- The line beneath this is called `modeline`. See `:help modeline`
--- vim: ts=2 sts=2 sw=2 et
+-- vim: set ts=2 sts=2 sw=2
